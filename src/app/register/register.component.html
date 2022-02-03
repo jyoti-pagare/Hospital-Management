@@ -1,0 +1,69 @@
+<section class="gradient-custom">
+	<div class="container py-5 h-100">
+	  <div class="row justify-content-center align-items-center h-100">
+		<div class="col-12 col-lg-9 col-xl-7">
+		  <div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
+			<div class="card-body p-4 p-md-5">
+			  <h3 class="text-center mb-4 pb-2 pb-md-0 mb-md-5">SignUp</h3>
+			  
+			  <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+	            <div class="form-outline mb-2">
+					<label class="form-label" for="form3Example4cdg"><b>Name</b></label>
+					<input type="text" id="form3Example4cdg" formControlName="pname" class="form-control form-control-lg" required />
+				  </div>
+				  <div class="form-outline mb-2">
+					<label class="form-label" for="form3Example4cdg"><b>Email</b></label>
+					<input type="text" id="form3Example4cdg" formControlName="email" class="form-control form-control-lg"  required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{3,3}$" />                
+				  </div>
+				  <div class="form-outline mb-2">
+					<label class="form-label" for="form3Example4cg"><b>Password</b></label>
+					<input type="password" id="form3Example4cg" formControlName="password" class="form-control form-control-lg" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" />                
+				  </div>
+				  <div class="form-outline mb-2">
+					<label class="form-label" for="form3Example4cg"><b>Confirm Password</b></label>
+					<input type="password" id="form3Example4cg" formControlName="cpassword" class="form-control form-control-lg" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" />                
+				  </div>	
+				  <div class="form-outline mb-2">
+					<label class="form-label" for="form3Example4cdg"><b>Phone</b></label>
+					<input type="long" id="form3Example4cdg" formControlName="phone" class="form-control form-control-lg"  required pattern="[7-9]{1}[0-9]{9}" />
+				  </div>		  
+				  <div class="form-group row">
+					<label for="inputname" class="col-sm-2 col-form-label">Date of Admit</label>
+					<div class="col-sm-10">
+						<input type="date" min="2022-01-28" formControlName="date" class="form-control" id="date" required >
+					</div>
+				  </div>
+				  <div class="form-group row">
+					<label for="inputname" class="col-sm-2 col-form-label">Gender</label>
+					<div class="col-sm-10">
+					<select class="select form-control-lg" formControlName="gender" required>
+					  <option value="Male">Male</option>
+					  <option value="Female">Female</option>
+					  <option value="Others">Others</option>
+					</select>
+				  </div>
+				  </div>
+				  <div class="form-outline mb-2">
+					<label class="form-label" for="form3Example4cdg"><b>Address</b></label>
+					<input type="text" id="form3Example4cdg" formControlName="address" class="form-control form-control-lg" required/>
+				  </div>
+				  
+				  <div class="form-outline mb-2">
+					<label class="form-label" for="form3Example4cdg"><b>City</b></label>
+					<input type="text" id="form3Example4cdg" formControlName="city" class="form-control form-control-lg" required/>
+					</div>
+				  
+					<div class="d-flex justify-content-center">
+						<button (click)="addPatient()"  class="btn btn-success btn-block btn-lg gradient-custom-4 text-body">Register</button>
+					  </div>
+			  </form>
+			  
+		
+			
+			  
+			</div>
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </section>

@@ -1,0 +1,28 @@
+
+.home{
+    height: 100%;
+    width: 100%;
+    object-position: center;
+    
+}
+.home1{
+    position: absolute;
+     top: 50%;
+     left: 20%;
+     transform: translate(-30%,-30%);
+     color: rgb(252, 4, 4);
+}
+.home2{
+    position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-30%,-30%);
+     color: rgb(252, 4, 4);
+}
+.home3{
+    position: absolute;
+     top: 50%;
+     left: 70%;
+     transform: translate(-30%,-30%);
+     color: rgb(252, 4, 4);
+}
