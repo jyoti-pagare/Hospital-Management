@@ -20,6 +20,8 @@ import { MedicationComponent } from './medication/medication.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { PatientUpdateComponent } from './patientupdate/patientupdate.component';
+import { RoomComponent } from './room/room.component';
+import { DoctorComponent } from './doctor/doctor.component';
 
 
 @NgModule({
@@ -39,6 +41,8 @@ import { PatientUpdateComponent } from './patientupdate/patientupdate.component'
     FoodComponent,
     MedicationComponent,
     PatientUpdateComponent,
+    RoomComponent,
+    DoctorComponent,
     
    
   ],

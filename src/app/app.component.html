@@ -48,9 +48,18 @@
               class="nav-link"
               routerLink="/ourservices"
               routerLinkActive="active"
-              ><b>ourservices</b></a
+              ><b>Our Services</b></a
             >
             </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                routerLink="/doctor"
+                routerLinkActive="active"
+                ><b>Doctor's Available</b></a
+              >
+              </li>
             <div class="d-inline-block" *ngIf="loggedin()">
               <a class="nav-link"  (click) = "details()" routerLink="/patientdetails" routerLinkActive="active"><p class="text-dark"><b>Patient Details</b></p></a> 
             </div>

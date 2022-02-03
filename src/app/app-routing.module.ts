@@ -14,7 +14,7 @@ import { ServicesComponent } from './services/services.component';
 import { AmbulanceComponent } from './ambulance/ambulance.component';
 import { FoodComponent } from './food/food.component';
 import { MedicationComponent } from './medication/medication.component';
-
+import { DoctorComponent } from './doctor/doctor.component';
 const routes: Routes = [
 {path: 'home',component:HomeComponent},
 {path:'aboutus',component:AboutusComponent},
@@ -29,6 +29,7 @@ const routes: Routes = [
 {path:'services',component:ServicesComponent},
 {path:'ambulance',component:AmbulanceComponent},
 {path:'food',component:FoodComponent},
+{path:'doctor',component:DoctorComponent},
 {path:'medication',component:MedicationComponent}
 ];
 

@@ -27,12 +27,7 @@
 					<label class="form-label" for="form3Example4cdg"><b>Phone</b></label>
 					<input type="long" id="form3Example4cdg" formControlName="phone" class="form-control form-control-lg"  required pattern="[7-9]{1}[0-9]{9}" />
 				  </div>		  
-				  <div class="form-group row">
-					<label for="inputname" class="col-sm-2 col-form-label">Date of Admit</label>
-					<div class="col-sm-10">
-						<input type="date" min="2022-01-28" formControlName="date" class="form-control" id="date" required >
-					</div>
-				  </div>
+				 
 				  <div class="form-group row">
 					<label for="inputname" class="col-sm-2 col-form-label">Gender</label>
 					<div class="col-sm-10">
@@ -53,7 +48,22 @@
 					<input type="text" id="form3Example4cdg" formControlName="city" class="form-control form-control-lg" required/>
 					</div>
 				  
-					<div class="d-flex justify-content-center">
+					
+
+
+					  <div class="form-outline mb-2">
+						<label class="form-label" for="form3Example4cdg"><b>Appointment with Doctor</b></label>
+						<input type="text" id="form3Example4cdg" formControlName="name" class="form-control form-control-lg" required />
+					  </div>
+
+					  <div class="form-group row">
+						<label for="inputname" class="col-sm-2 col-form-label"><b>Date of Appointment</b></label>
+						<div class="col-sm-10">
+							<input type="date" min="2022-01-28" formControlName="date" class="form-control" id="date" required >
+						</div>
+					  </div>
+
+					  <div class="d-flex justify-content-center">
 						<button (click)="addPatient()"  class="btn btn-success btn-block btn-lg gradient-custom-4 text-body">Register</button>
 					  </div>
 			  </form>

@@ -7,11 +7,12 @@
         <th scope="col">Pid</th>
         <th scope="col">Patientname</th>
         <th scope="col">Email</th>
-        <th scope="col">Password</th>
+       
         <th scope="col">Phone</th>
         <th scope="col">gender</th>
         <th scope="col">Address</th>
         <th scope="col">City</th>
+        <th scope="col">Doctor</th>
         <th scope="col">Action </th>
     </tr>
     </thead>
@@ -22,11 +23,12 @@
         <td>{{ pat.pid }}</td>
         <td>{{ pat.pname }}</td>
         <td>{{ pat.email }}</td>
-        <td>{{ pat.password }}</td>
+        <td>{{ pat.doctor }}</td>
         <td>{{ pat.phone }}</td>
         <td>{{ pat.gender }}</td>
         <td>{{ pat.address }}</td>
         <td>{{ pat.city }}</td>
+
         <td><a routerLink="/patientupdate/{{pat.pid}}"><button class="btn btn-info">Edit</button></a>
             </td>
 

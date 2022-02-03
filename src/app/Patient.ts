@@ -10,5 +10,6 @@ export interface Patient {
     gender: string;
     address:string;
     city:string;
+    doctor:string;
   }
   
